@@ -69,7 +69,11 @@
         <h2>Kontaktformular für Mietinteressenten</h2>
         <p>Bitte füllen Sie die wichtigsten Angaben aus. Wir melden uns schnellstmöglich zurück.</p>
 
-        <form>
+        <form action="https://formsubmit.co/matt.olivier@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Neue Mietanfrage über Vermietungsseite Mannheim" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_next" value="https://oma67.github.io/vermietung-mannheim-wohnungen/" />
           <div class="form-grid">
             <div>
               <label for="vorname">Vorname</label>
@@ -113,7 +117,7 @@
           <textarea id="nachricht" name="nachricht" placeholder="Kurzvorstellung, Beruf, Haustiere, Rückfragen..."></textarea>
 
           <button class="btn" type="submit">Anfrage senden</button>
-          <div class="hint">Hinweis: Aktuell ist dies ein statisches Formular ohne Backend-Versand. Auf Wunsch verbinde ich es direkt mit E-Mail (z. B. Formspree/N8N).</div>
+          <div class="hint">Hinweis: Formularversand ist aktiv und sendet Anfragen per E-Mail an matt.olivier@gmail.com.</div>
         </form>
       </article>
     </section>
